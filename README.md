@@ -1,4 +1,4 @@
-# 📊 SERP LIVE Tracker + Visualizer
+# 📊 SERP Live Tracker + Analyzer (Streamlit)
 
 This is a Streamlit-based SERP tracking dashboard that pulls Google search results using the **Google Programmable Search (Custom Search JSON API)**, stores snapshots over time, and visualizes ranking changes, volatility, and domain trends.
 
@@ -28,5 +28,5 @@ This is a Streamlit-based SERP tracking dashboard that pulls Google search resul
 1. Clone the repo:
 
    ```bash
-   git clone https://github.com/<your-username>/<your-repo>.git
-   cd <your-repo>
+   git clone https://github.com/rajeshtudu/SERP-Live-Analyzer.git
+   cd SERP-Live-Analyzer
