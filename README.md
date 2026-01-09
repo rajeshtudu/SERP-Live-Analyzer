@@ -1,25 +1,32 @@
-📊 SERP Tracker + Visualizer
+# 📊 SERP LIVE Tracker + Visualizer
 
-A Streamlit app to track Google search rankings in real-time using the Google Custom Search API. Collect snapshots of SERPs (Search Engine Result Pages), visualize rank changes, domain distributions, winners & losers, and export your data for analysis.
+This is a Streamlit-based SERP tracking dashboard that pulls Google search results using the **Google Programmable Search (Custom Search JSON API)**, stores snapshots over time, and visualizes ranking changes, volatility, and domain trends.
 
-🔹 Features
+---
 
-  - Live SERP tracking for multiple queries
+## Features
 
-  - Persistent snapshot history saved automatically
+- Live SERP tracking with auto-refresh polling.
+- Rotates through multiple queries (one per refresh).
+- Fetches top results using Google Custom Search JSON API.
+- Saves SERP snapshots to a persistent CSV file (`data/serp_history.csv`).
+- Snapshot comparison metrics:
+  - Rank delta (Δrank) per URL
+  - Volatility score (avg |Δrank|)
+  - Stability score (% URLs retained)
+  - New entrants & dropped URLs
+- Visualizations with Plotly:
+  - Domain distribution bar chart (latest snapshot)
+  - Rank movement over time (top URLs)
+  - Domain presence heatmap (across snapshots)
+- Export SERP history as CSV from the UI.
 
-  - Metrics dashboard: volatility, stability, total snapshots
+---
 
-  - Identify winners & losers (rank movers) between snapshots
+## Setup Instructions
 
-🔹 Visualizations:
+1. Clone the repo:
 
-  - Latest SERP snapshot
-
-  - Domain distribution (bar chart)
-
-  - Rank movement over time (line chart)
-
-  - Domain presence heatmap
-
-Export SERP history as CSV
+   ```bash
+   git clone https://github.com/<your-username>/<your-repo>.git
+   cd <your-repo>
